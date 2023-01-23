@@ -1,0 +1,38 @@
+* {
+    font-family: 'Roboto';
+}
+
+.stats-container {
+    background-color: #fff;
+    border: 2px solid #4BACC6;
+    overflow: hidden;
+    position: relative;
+    display: inline-table;
+    height: 100px;
+    width: 200px;
+    padding: 5px;
+    text-align: left;
+}
+
+.stats-icon {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    font-size: 60px;
+    opacity: 0.13;
+    line-height: 40px;
+}
+
+.stats-value {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #d4d4d4;
+    text-decoration: none;
+    color: #000;
+}
