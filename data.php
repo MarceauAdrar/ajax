@@ -2,7 +2,7 @@
     if(!empty($_POST["changer_donnees"])) {
         $icons = array("fa-solid fa-home", "fa-solid fa-car", "fa-solid fa-wifi", "fa-solid fa-ticket-alt", "fa-solid fa-snowflake");
         $textes = array("E.T", "MAISON", "Le code wifi est", "ça fait cher la place de ciné", "It's raining man, alléluia");
-        $colors = array("grey", "orange", "blue", "black", "yellow");
+        $colors = array("grey", "red", "yellow", "black", "cyan");
 
         $rand = rand(0, sizeof($icons)-1);
 
