@@ -2,8 +2,11 @@
     font-family: 'Roboto';
 }
 
+body {
+    background-color: #141414;
+}
+
 .stats-container {
-    background-color: #fff;
     border: 2px solid #4BACC6;
     overflow: hidden;
     position: relative;
@@ -12,6 +15,10 @@
     width: 200px;
     padding: 5px;
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 40vh;
 }
 
 .stats-icon {
@@ -35,4 +42,8 @@
     background-color: #d4d4d4;
     text-decoration: none;
     color: #000;
+    margin-left: auto;
+    margin-top: 1vh;
+    display: table;
+    margin-right: auto;
 }
