@@ -17,8 +17,27 @@
         </div>
         <a href="#" onclick="changerDonnees();" class="btn">Changer les données</a>
         <script>
-            function changerDonnees() {
-                
+            async function changerDonnees() {
+                event.preventDefault();
+                var formData = new FormData();
+                formData.append('changer_donnees', 1);
+
+                await fetch("../data.php", {
+                    method: "POST",
+                    body: formData
+                })
+                .then((response) => response.json())
+                .then((result) => {
+                    document.getElementById("icon").className = "";
+                    document.getElementById("icon").className = result.icon + " stats-icon color";
+                    document.getElementById("data").innerText = result.data;
+                    document.getElementById("text").innerText = result.text;
+                   
+                    var colors = document.getElementsByClassName('color');
+                    for(var i = 0 ; i < colors.length ; i++) {
+                        colors[i].style.color = result.color;
+                    }
+                });
             }
         </script>
     </body>
